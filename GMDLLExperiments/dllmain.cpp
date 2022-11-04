@@ -9,6 +9,16 @@ GMDLL double DLLAddNumbers(double a, double b) {
 	return a + b;
 }
 
-GMDLL void DLLPrintSomething() {
-	std::cout << "We are printing to the console from C++ land.\n" << std::endl;
+GMDLL void DLLPrintSomething(const char* message) {
+	std::cout << message << std::endl;
+}
+
+GMDLL double DLLBufferSum(int* buffer, double length) {
+	double total = 0;
+
+	for (int i = 0; i < length; i++) {
+		buffer[i] = 0;
+	}
+
+	return total;
 }

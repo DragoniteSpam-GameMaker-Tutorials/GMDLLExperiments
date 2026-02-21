@@ -17,7 +17,7 @@ GMDLL double DLLBufferSum(int* buffer, double length) {
 	double total = 0;
 
 	for (int i = 0; i < length; i++) {
-		buffer[i] = 0;
+		total += buffer[i];
 	}
 
 	return total;
